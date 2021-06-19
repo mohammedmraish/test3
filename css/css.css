@@ -1,0 +1,146 @@
+/*
+
+.one{
+   color: white;
+   font-style:oblique;
+   font-size: 40px;
+   height: 200px;
+   width: 200px;
+   background-color: grey;
+   padding: 10px;
+   margin: 5px;
+   
+   border: 4px double black;
+}
+.two{
+   color: white;
+   font-style:oblique;
+   font-size: 40px;
+   height:200px;
+   width: 200px;
+   background-color: rgb(119, 61, 61);
+   padding: 10px;
+   margin: 5px;
+   
+   border: 4px solid black;
+}
+
+.three{
+   overflow: auto;
+   
+   font-family: 'lucida';
+   fond-size: 20px;
+   font-weight: (100,200,..... 900   || bold|| normal);
+   font-style: ;
+   
+
+}
+
+.text{
+   text-align: center;
+   color: black;
+   letter-spacing: 1px;
+   word-spacing: 15px;
+   line-height: 2;
+   text-transform: uppercase ;uppercase lowercase capitalize
+   
+}
+
+*/
+/* padding and margin in page ==0 ----------------------- */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+ /* nav style --------------------------------------------------- */
+.navbar{
+    background: #333;
+}
+
+.navbar h2{
+   font-size: 28px;
+   color: #fff;
+   width: 20%;
+   float: left;
+
+
+}
+
+.navbar > ul{
+   list-style: none;
+   width: 80%;
+   float: left;
+
+}
+.clear{
+   clear: both;
+}
+
+.navbar > ul> li{
+   float: left;
+   width: 100px;
+}
+.navbar> ul >li >a{
+   display: block;
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+}
+
+ /* ul in li   */
+.navbar> ul >li> ul >li >a {
+   display: block;
+   background: violet;
+   text-decoration: none;
+   padding: 10px;
+   color:white ;
+}
+.navbar> ul >li> ul{
+   list-style: none;
+   position: absolute;
+   display:none;
+}
+.navbar>ul> li> a:hover + ul{
+   display: block;
+}
+
+
+/* form --------------- */
+form input, form select{
+   display:block;
+   width: 100%;
+}
+form input:focus{
+   background-color: lightblue;
+}
+
+/* after befor */
+.list{
+   padding:20px;
+   list-style:none;
+}
+.list li::before{
+   content:"";
+   display: inline-block;
+   width: 5px;
+   height:5px;
+   background:red;
+   vertical-align: middle;
+   margin-right: 3px;
+}
+
+/* css uints ... px em rem vh vw */  
+/* 
+ em(relative to parent element)
+ rem(relative to root element)
+ vh( 50=50% from high)
+ vw( 50=50% from width)
+*/
+
+
+/* specificity--> [styleinline id (class| pseudo class | attr selector) element] =0 0 0 0*/
+
+
+/*  margin: auto       ----> to center block item
+    text-align: center ----> to center text in parent  */
